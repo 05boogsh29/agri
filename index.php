@@ -19,7 +19,7 @@ mysqli_stmt_execute($check_admin_stmt);
 $admin_result = mysqli_stmt_get_result($check_admin_stmt);
 
 if (mysqli_num_rows($admin_result) == 0) {
-    $admin_full_name = "System Administrator";
+    $admin_full_name = "Administrator";
     $admin_email = "admin@agrimarket.local";
     $admin_password_hash = password_hash("admin123", PASSWORD_DEFAULT);
     $admin_role = "admin";
