@@ -305,30 +305,69 @@ $recent_users = mysqli_query(
         </div>
 
         <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-label">Total Farmers</div>
-                <div class="stat-value"><?php echo $total_farmers; ?></div>
-            </div>
+           <div class="stats-grid">
 
-            <div class="stat-card">
-                <div class="stat-label">Total Buyers</div>
-                <div class="stat-value"><?php echo $total_buyers; ?></div>
+    <div class="stat-card">
+        <div class="stat-icon">
+            <i class="fas fa-tractor"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-label">Total Farmers</div>
+            <div class="stat-value">
+                <?php echo $total_farmers; ?>
             </div>
+        </div>
+    </div>
 
-            <div class="stat-card">
-                <div class="stat-label">Active Bids</div>
-                <div class="stat-value"><?php echo $active_bids; ?></div>
+    <div class="stat-card">
+        <div class="stat-icon">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-label">Total Buyers</div>
+            <div class="stat-value">
+                <?php echo $total_buyers; ?>
             </div>
+        </div>
+    </div>
 
-            <div class="stat-card">
-                <div class="stat-label">Ongoing Auctions</div>
-                <div class="stat-value"><?php echo $ongoing_auctions; ?></div>
+    <div class="stat-card">
+        <div class="stat-icon">
+            <i class="fas fa-gavel"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-label">Active Bids</div>
+            <div class="stat-value">
+                <?php echo $active_bids; ?>
             </div>
+        </div>
+    </div>
 
-            <div class="stat-card">
-                <div class="stat-label">Total Sales</div>
-                <div class="stat-value">₱<?php echo number_format((float)$total_sales, 2); ?></div>
+    <div class="stat-card">
+        <div class="stat-icon">
+            <i class="fas fa-clock"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-label">Ongoing Auctions</div>
+            <div class="stat-value">
+                <?php echo $ongoing_auctions; ?>
             </div>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">
+            <i class="fas fa-coins"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-label">Total Sales</div>
+            <div class="stat-value">
+                ₱<?php echo number_format((float)$total_sales, 2); ?>
+            </div>
+        </div>
+    </div>
+
+</div>
         </div>
 
         <div class="panel-grid">
