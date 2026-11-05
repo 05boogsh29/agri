@@ -2,7 +2,7 @@
 session_start();
 
 /* ================= DATABASE CONNECTION ================= */
-$conn = mysqli_connect("localhost", "root", "", "agri_markettt", "3306");
+require_once dirname(__DIR__) . '/db.php';
 if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }

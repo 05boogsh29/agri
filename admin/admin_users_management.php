@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id']) || !isset($_SESSION['role']) || $_SESSION['role
     exit();
 }
 
-$conn = mysqli_connect("localhost", "root", "", "agri_markettt", "3306");
+require_once dirname(__DIR__) . '/db.php';
 if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
